@@ -28,8 +28,15 @@ const server = http.createServer(function(req, res){
             return res.end("Pet não encontrado!")
         }
     }
+
+
+    res.write("Seja bem vindo ao sistema PetShop")
+    return res.end();
+
 })
 
-server.listen(3000, 'localhost', ()=>{
+
+
+server.listen(3030, 'localhost', ()=>{
     console.log("Servidor iniciado")
 })
